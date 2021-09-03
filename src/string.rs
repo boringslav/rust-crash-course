@@ -29,5 +29,4 @@ println!("{}",s);
 //Assetion testing
 assert_eq!(2,s.len()); //if assertion fails -> error, else nothing 
 
-
 }
