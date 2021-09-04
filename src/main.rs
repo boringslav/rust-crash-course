@@ -7,7 +7,8 @@
 // mod vectors;
 // mod functions;
 // mod pointer_ref;
-mod structs;
+// mod structs;
+// mod enums;
 fn main() {
     // print::run();
     // vars::run();
@@ -17,5 +18,6 @@ fn main() {
     // vectors::run();
     // functions::run();
     // pointer_ref::run();
-    structs::run();
+    // structs::run();
+    // enums::run();
 }
