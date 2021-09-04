@@ -5,7 +5,8 @@
 // mod tuples;
 // mod arrays;
 // mod vectors;
-mod functions;
+// mod functions;
+mod pointer_ref;
 fn main() {
     // print::run();
     // vars::run();
@@ -13,5 +14,6 @@ fn main() {
     // tuples::run();
     // arrays::run();
     // vectors::run();
-    functions::run();
+    // functions::run();
+    pointer_ref::run();
 }
