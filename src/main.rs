@@ -6,7 +6,8 @@
 // mod arrays;
 // mod vectors;
 // mod functions;
-mod pointer_ref;
+// mod pointer_ref;
+mod structs;
 fn main() {
     // print::run();
     // vars::run();
@@ -15,5 +16,6 @@ fn main() {
     // arrays::run();
     // vectors::run();
     // functions::run();
-    pointer_ref::run();
+    // pointer_ref::run();
+    structs::run();
 }
