@@ -3,11 +3,13 @@ use std::mem;
 
 pub fn run() {
     let mut numbers: [i32; 5] = [1, 2, 3, 4, 5]; //has to be exact (no empty positions)
+    let months = ["January", "February", "March", "April", "May"];
+    let same_value_array = ["value"; 5]; //same value array
 
     //Re-assign value
     numbers[2] = 50;
 
-    println!("{:?}", numbers);
+    println!("Same value array {:?}", same_value_array);
 
     //Get single value
     println!("Single value: {}", numbers[0]);
