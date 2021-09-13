@@ -16,11 +16,12 @@ fn main() {
     // vars::run();
     // string::run();
     // tuples::run();
-    arrays::run();
+    // arrays::run();
     // vectors::run();
     // functions::run();
     // pointer_ref::run();
     // structs::run();
     // enums::run();
     // cli::run();
+    types::bool();
 }
