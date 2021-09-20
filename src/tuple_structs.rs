@@ -4,4 +4,6 @@ pub fn run(){
 
     let black = Color(0, 0, 0);
     let origin = Point(0, 0, 0);
+
+    println!("First color: {} Second Color: {} Third Color: {}", black.0, black.1, black.2);
 }

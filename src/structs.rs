@@ -1,3 +1,4 @@
+#[derive(Debug)] //allows to print structs
 struct User {
     username: String,
     email: String,
@@ -16,8 +17,8 @@ pub fn run() {
         ..user1
     };
 
-    println!("User2: {}, Email: {} isActive: {} sign in count: {}",user1.username, user1.email, user1.is_active,user1.sign_in_count);
-    println!("User2: {}, Email: {} isActive: {} sign in count: {}",user2.username, user2.email, user2.is_active,user2.sign_in_count);
+    println!("User1: {:?}",user1);
+    println!("User2: {:?}",user2);
 }
 
 fn create_user(email: String, username: String) -> User {
