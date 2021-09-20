@@ -1,7 +1,7 @@
 mod structs;
-mod tuple_Structs;
+mod tuple_structs;
 
 fn main() {
     structs::run();
-    tuple_Structs::run();
+    tuple_structs::run();
 }
