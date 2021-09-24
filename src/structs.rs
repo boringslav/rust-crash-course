@@ -1,4 +1,4 @@
-#[derive(Debug)] //allows to print structs
+#[derive(Debug)]
 struct User {
     username: String,
     email: String,
@@ -9,7 +9,7 @@ struct User {
 pub fn run() {
     let username = String::from("borko");
     let email = String::from("borko@example.com");
-    let user1 = create_user(email,username);
+    let user1 = create_user(email, username);
 
     let user2 = User {
         username: String::from("Borkoto"),
@@ -17,15 +17,15 @@ pub fn run() {
         ..user1
     };
 
-    println!("User1: {:?}",user1);
-    println!("User2: {:?}",user2);
+    println!("User1: {:?}", user1);
+    println!("User2: {:?}", user2);
 }
 
 fn create_user(email: String, username: String) -> User {
     return User {
         email,
         username,
-        is_active:true,
+        is_active: true,
         sign_in_count: 1,
     };
 }
