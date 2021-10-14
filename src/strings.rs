@@ -1,7 +1,7 @@
-pub fn run(){
+pub fn run() {
     //Strings are UTF-8 encoded
-    let mut s = String::new();//Create a new string
-    s.push_str("Hello world!");//Add to the end of the string
+    let mut s = String::new(); //Create a new string
+    s.push_str("Hello world!"); //Add to the end of the string
 
     let _d = "initial content (str)".to_string();
     let _d1 = String::from("initial content (str)");

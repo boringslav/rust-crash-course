@@ -15,7 +15,8 @@ pub fn run() {
 
     println!("Third element is: {}", third);
 
-    match mutable_vector.get(1) {//get syntax gives an Option<&T> If there is no el the program will return None value and wont crash
+    match mutable_vector.get(1) {
+        //get syntax gives an Option<&T> If there is no el the program will return None value and wont crash
         Some(second) => println!("The second element is {}", second),
         None => println!("There is no second element"),
     }
@@ -26,19 +27,17 @@ pub fn run() {
     } // <- v goes out of scope and is freed here
 }
 pub fn iterate_values() {
-    let mut v = vec![100,50,25];
+    let mut v = vec![100, 50, 25];
     println!("{:?}", v);
 
     for i in &mut v {
-        *i +=50;//dereference operator
-        println!("Element: {}",i);
+        *i += 50; //dereference operator
+        println!("Element: {}", i);
     }
-
-  
 }
-pub fn using_enum_to_store_multiple_types(){
+pub fn using_enum_to_store_multiple_types() {
     #[derive(Debug)]
-    enum SpreadsheetCell{
+    enum SpreadsheetCell {
         ClientNumber(i32),
         Name(String),
         Balance(f64),
@@ -50,5 +49,5 @@ pub fn using_enum_to_store_multiple_types(){
         SpreadsheetCell::Balance(65.10),
     ];
 
-    println!("Enum Vector {:?}",row);
+    println!("Enum Vector {:?}", row);
 }
