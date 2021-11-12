@@ -1,4 +1,8 @@
 use std::fs::File;
 use std::io::ErrorKind;
+mod errors;
 
-fn main() {}
+
+fn main() {
+    errors::run();
+}

@@ -1,3 +1,7 @@
+use std::fs::File;
+use std::io::ErrorKind;
+use std::io::{self, Read};
+
 pub fn run () {
     let f = File::open("hello.txt");
     let f = match f {
@@ -35,7 +39,7 @@ pub fn read_username_from_file() -> Result<String, io::Error> {
     }
 }
 
-pub fn shortcut_for_error_propagation(){
+pub fn shortcut_for_error_propagation() -> Result<String, io::Error>{
     let mut s = String::new();
 // If the value of the Result is an Ok, the value inside the Ok will get returned from this expression, and the program will continue. If the value is an Err, the Err will be returned from the whole function as if we had used the return keyword so the error value gets propagated to the calling code.
     File::open("hello.txt")?.read_to_string(&mut s)?;
